@@ -26,7 +26,21 @@ public class AudienceMember : MonoBehaviour, IDamageable
     float cooldownT = 0;
 
     public Vector2Int scoreRange = new Vector2Int(5, 16);
-    int appreciation;
+    int m_appreciation;
+    int appreciation
+    {
+        get
+        {
+            return m_appreciation;
+        }
+
+        set
+        {
+            m_appreciation = value;
+            m_appreciation = m_appreciation < 0 ? 0 : m_appreciation;
+        }
+    }
+    public int appreciationOnHit = 3;
     public float scoreTime = 1f;
     float scoreT = 0;
     public float appreciationLoss = 5f;
@@ -56,6 +70,8 @@ public class AudienceMember : MonoBehaviour, IDamageable
             scoreT = 0;
             ScoreManager.instance.AddScore(appreciation);
         }
+
+        appreciationT += Time.deltaTime;
 
         if (appreciationT >= appreciationLoss)
         {
@@ -104,7 +120,7 @@ public class AudienceMember : MonoBehaviour, IDamageable
 
     public void Hit()
     {
-        appreciation++;
+        appreciation += appreciationOnHit;
         CheckAppreciation();
     }
 
@@ -127,16 +143,6 @@ public class AudienceMember : MonoBehaviour, IDamageable
             flashColour = lowAppreciation;
             shootCooldown = shootCooldownLow;
         }
-
-        if (appreciation <= 0)
-        {
-            Leave();
-        }
-    }
-
-    void Leave()
-    {
-        //TODO
     }
 
     Color LerpColour(Color a, Color b, float t)

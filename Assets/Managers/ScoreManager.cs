@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class ScoreManager : MonoBehaviour
@@ -18,7 +19,7 @@ public class ScoreManager : MonoBehaviour
         livesText.text = currentLives.ToString();
     }
 
-    float currentScore = 0;
+    public static float currentScore = 0;
 
     public void AddScore(int addScore)
     {
@@ -33,6 +34,29 @@ public class ScoreManager : MonoBehaviour
     {
         currentLives--;
 
-        livesText.text = currentLives.ToString();
+        if (currentLives <= 0)
+            LoseGame();
+        else
+            livesText.text = currentLives.ToString();
+    }
+
+    void LoseGame()
+    {
+        SceneManager.LoadScene(E_Scenes.LoseScene.ToString());
+    }
+
+    public float showTime = 60f;
+
+    private void Update()
+    {
+        showTime -= Time.deltaTime;
+
+        if (showTime <= 0)
+            WinGame();
+    }
+
+    void WinGame()
+    {
+        SceneManager.LoadScene(E_Scenes.WinScene.ToString());
     }
 }

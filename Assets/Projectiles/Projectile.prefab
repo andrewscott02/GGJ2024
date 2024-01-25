@@ -50,7 +50,7 @@ MonoBehaviour:
   speed: 4
   hitLayerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 129
 --- !u!50 &3352134356692632452
 Rigidbody2D:
   serializedVersion: 4

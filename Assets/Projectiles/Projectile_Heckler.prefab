@@ -59,5 +59,9 @@ PrefabInstance:
       propertyPath: speed
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 7062014680629859746, guid: 0346344d261f45046b0fcfb3bb86eb0e, type: 3}
+      propertyPath: hitLayerMask.m_Bits
+      value: 65
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0346344d261f45046b0fcfb3bb86eb0e, type: 3}
