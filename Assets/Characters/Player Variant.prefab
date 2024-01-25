@@ -95,10 +95,22 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1639257224392318538, guid: 87bd6b17db869c6469f7f039418b6b3e, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2171542046384923561, guid: 87bd6b17db869c6469f7f039418b6b3e, type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 2264009550214112089, guid: 87bd6b17db869c6469f7f039418b6b3e, type: 3}
+      propertyPath: pieces.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264009550214112089, guid: 87bd6b17db869c6469f7f039418b6b3e, type: 3}
+      propertyPath: pieces.Array.data[0]
+      value: 
+      objectReference: {fileID: 798654335989604558, guid: 19c06fcb8c6a9334e9e53c3dc57c984d, type: 3}
     - target: {fileID: 4919386520826487538, guid: 87bd6b17db869c6469f7f039418b6b3e, type: 3}
       propertyPath: m_Layer
       value: 6

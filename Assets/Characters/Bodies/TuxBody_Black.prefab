@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 693986710824236880}
   - component: {fileID: 693986710824236881}
-  - component: {fileID: 6089914506255518009}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -85,24 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6089914506255518009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 693986710824236883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c180a9221ca892648965c586e4e158d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shirtSprite: {fileID: 693986710824236881}
-  colours:
-  - {r: 0.068699256, g: 0.056069765, b: 0.18867922, a: 1}
-  - {r: 0.1792453, g: 0.108732596, b: 0.08032218, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
 --- !u!1 &693986711435382508
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,7 +94,6 @@ GameObject:
   m_Component:
   - component: {fileID: 693986711435382509}
   - component: {fileID: 693986711435382506}
-  - component: {fileID: 5484322011316721784}
   m_Layer: 0
   m_Name: Square (2)
   m_TagString: Untagged
@@ -188,40 +168,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5484322011316721784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 693986711435382508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c180a9221ca892648965c586e4e158d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shirtSprite: {fileID: 693986711435382506}
-  colours:
-  - {r: 0.11372549, g: 0.14117648, b: 0.34117648, a: 1}
-  - {r: 0.44718477, g: 0.41960785, b: 0.69803923, a: 1}
-  - {r: 0.34117648, g: 0.11590932, b: 0.11372548, a: 1}
-  - {r: 0.6981132, g: 0.4182093, b: 0.4182093, a: 1}
-  - {r: 0.11372548, g: 0.30357635, b: 0.34117648, a: 1}
-  - {r: 0.38714847, g: 0.52696455, b: 0.5660378, a: 1}
-  - {r: 0.11372548, g: 0.34117648, b: 0.15717849, a: 1}
-  - {r: 0.3882353, g: 0.5647059, b: 0.4098151, a: 1}
-  - {r: 0.5943396, g: 0.55687916, b: 0.15979885, a: 1}
-  - {r: 0.46226418, g: 0.43755195, b: 0.2769224, a: 1}
-  - {r: 0.6698113, g: 0.41942164, b: 0.11690103, a: 1}
-  - {r: 0.5188679, g: 0.35604087, b: 0.23251157, a: 1}
-  - {r: 0.4437306, g: 0.15477037, b: 0.6981132, a: 1}
-  - {r: 0.4524191, g: 0.32306874, b: 0.5660378, a: 1}
-  - {r: 0.6792453, g: 0.18903525, b: 0.653573, a: 1}
-  - {r: 0.5283019, g: 0.3214667, b: 0.51837385, a: 1}
-  - {r: 0, g: 0, b: 0, a: 1}
-  - {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
-  - {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
-  - {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
 --- !u!1 &693986711697653967
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8300672689318541665}
   m_Layer: 0
-  m_Name: TuxBody
+  m_Name: TuxBody_Black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

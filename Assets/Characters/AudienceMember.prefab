@@ -27,6 +27,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 252452644825451999, guid: 87bd6b17db869c6469f7f039418b6b3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 252452645186383390, guid: 87bd6b17db869c6469f7f039418b6b3e, type: 3}
       propertyPath: m_Name
       value: AudienceMember
@@ -95,13 +99,25 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1639257224392318538, guid: 87bd6b17db869c6469f7f039418b6b3e, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2171542046384923561, guid: 87bd6b17db869c6469f7f039418b6b3e, type: 3}
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 2171542046384923561, guid: 87bd6b17db869c6469f7f039418b6b3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4919386520826487538, guid: 87bd6b17db869c6469f7f039418b6b3e, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919386520826487538, guid: 87bd6b17db869c6469f7f039418b6b3e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7484960292962515875, guid: 87bd6b17db869c6469f7f039418b6b3e, type: 3}
       propertyPath: m_Layer
@@ -140,6 +156,7 @@ MonoBehaviour:
   shootCooldownMid: {x: 2, y: 3}
   currentCooldownTime: 0
   scoreRange: {x: 5, y: 26}
+  appreciationOnHit: 3
   scoreTime: 1
   appreciationLoss: 2
   faceSprite: {fileID: 8240664910073073860}
