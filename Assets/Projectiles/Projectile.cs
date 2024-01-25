@@ -11,11 +11,11 @@ public class Projectile : MonoBehaviour
     Vector3 dir;
     GameObject caster;
 
-    public void Shoot(Vector2 mousePos, GameObject caster)
+    public void Shoot(Vector2 targetPos, GameObject caster)
     {
         this.caster = caster;
 
-        Vector3 mousePos3D = new Vector3(mousePos.x, mousePos.y, 0);
+        Vector3 mousePos3D = new Vector3(targetPos.x, targetPos.y, 0);
         Vector3 direction = mousePos3D - transform.position;
         direction.z = 0;
         dir = direction;
@@ -38,6 +38,13 @@ public class Projectile : MonoBehaviour
 
         if (other.gameObject != caster)
         {
+            IDamageable hitDamageable = other.GetComponent<IDamageable>();
+
+            if (hitDamageable != null)
+            {
+                hitDamageable.Hit();
+            }
+
             Debug.Log("Hit " + other.name);
             Destroy(this.gameObject);
         }

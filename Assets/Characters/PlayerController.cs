@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IDamageable
 {
     public Vector2 moveSpeed = new Vector2(1, 1);
     public Object projectile;
@@ -51,4 +51,14 @@ public class PlayerController : MonoBehaviour
         Projectile projectileScript = projectileGO.GetComponent<Projectile>();
         projectileScript.Shoot(mousePos, this.gameObject);
     }
+
+    public void Hit()
+    {
+        ScoreManager.instance.RemoveLife();
+    }
+}
+
+public interface IDamageable
+{
+    public void Hit();
 }
