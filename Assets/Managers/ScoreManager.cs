@@ -8,8 +8,7 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
 
-    public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI livesText;
+    public TextMeshProUGUI scoreText, livesText, timeText;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +16,7 @@ public class ScoreManager : MonoBehaviour
         instance = this;
         scoreText.text = currentScore.ToString();
         livesText.text = currentLives.ToString();
+        timeText.text = ((int)showTime).ToString();
     }
 
     public static float currentScore = 0;
@@ -53,6 +53,8 @@ public class ScoreManager : MonoBehaviour
 
         if (showTime <= 0)
             WinGame();
+        else
+            timeText.text = ((int)showTime).ToString();
     }
 
     void WinGame()
