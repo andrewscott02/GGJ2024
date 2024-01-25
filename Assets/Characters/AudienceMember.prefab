@@ -57,6 +57,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87bd6b17db869c6469f7f039418b6b3e, type: 3}
+--- !u!212 &8240664910073073860 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 252452644598279743, guid: 87bd6b17db869c6469f7f039418b6b3e, type: 3}
+  m_PrefabInstance: {fileID: 8204535170453077755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8240664910526992613 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 252452645186383390, guid: 87bd6b17db869c6469f7f039418b6b3e, type: 3}
@@ -75,5 +80,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 611113262041475521, guid: 684e4df53d0760c4fb9bf5da20587d64, type: 3}
-  shootCooldown: {x: 1.2, y: 2}
+  shootCooldownLow: {x: 1.2, y: 2}
+  shootCooldownMid: {x: 2, y: 3}
   currentCooldownTime: 0
+  scoreRange: {x: 5, y: 26}
+  scoreTime: 1
+  appreciationLoss: 3
+  faceSprite: {fileID: 8240664910073073860}
+  highAppreciation: {r: 0, g: 1, b: 0.07986307, a: 1}
+  midAppreciation: {r: 1, g: 0.64289963, b: 0, a: 1}
+  lowAppreciation: {r: 1, g: 0, b: 0, a: 1}
+  highThreshold: 30
+  midThreshold: 15
