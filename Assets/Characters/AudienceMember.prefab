@@ -158,7 +158,7 @@ MonoBehaviour:
   scoreRange: {x: 5, y: 26}
   appreciationOnHit: 3
   scoreTime: 1
-  appreciationLoss: 2
+  appreciationLoss: 2.5
   faceSprite: {fileID: 8240664910073073860}
   highAppreciation: {r: 0, g: 1, b: 0.07986307, a: 1}
   midAppreciation: {r: 1, g: 0.64289963, b: 0, a: 1}
